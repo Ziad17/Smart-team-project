@@ -9,6 +9,28 @@ public class Subject {
     private Level level;
     private Professor professor;
 
+    public Subject()
+    {}
+
+    public Subject(String name,int id, String code,int chapter_num)
+    {
+        set_chapter_num(chapter_num);
+        set_code(code);
+        set_id(id);
+        set_name(name);
+    }
+
+    public Subject(String name,int id, String code,int chapter_num,Department department,Professor professor ,Level level)
+    {
+        set_chapter_num(chapter_num);
+        set_code(code);
+        set_id(id);
+        set_name(name);
+        set_level(level);
+        set_department(department);
+        set_professor(professor);
+    }
+
 
     public Professor get_professor()
     {return this.professor;}
