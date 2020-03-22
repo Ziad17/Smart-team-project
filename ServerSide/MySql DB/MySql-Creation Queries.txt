@@ -1,0 +1,61 @@
+CREATE DATABASE EXAM_SYSTEM;
+
+
+Faculty Table---------------------------------------------------------------------------------------------
+CREATE TABLE Faculty(id INT PRIMARY KEY AUTO_INCREMENT,name TEXT);
+
+
+Level Table---------------------------------------------------------------------------------------------
+CREATE TABLE Level(id INT PRIMARY KEY AUTO_INCREMENT,
+                    name TEXT,
+                  faculty_id INT,
+                  FOREIGN KEY(faculty_id) REFERENCES Faculty(id));
+
+Department Table---------------------------------------------------------------------------------------------
+CREATE TABLE Department(id INT PRIMARY KEY AUTO_INCREMENT,
+                    name TEXT,
+                  faculty_id INT,
+                  FOREIGN KEY(faculty_id) REFERENCES Faculty(id));
+
+Prof_Request---------------------------------------------------------------------------------------------
+CREATE TABLE Prof_request(id INT PRIMARY KEY AUTO_INCREMENT,
+                   name TEXT,
+                   phone TEXT,
+                  degree TEXT,
+                  email TEXT UNIQUE,
+                  acadmic_id TEXT UNIQUE,
+                  user_password TEXT,
+                  accept_stat boolean,
+                  request_date DATE,
+                  department_id INT,
+                  FOREIGN KEY(department_id) REFERENCES Department(id));
+Approved_prof Table---------------------------------------------------------------------------------------------
+CREATE TABLE Approved_prof(id INT PRIMARY KEY AUTO_INCREMENT,
+                          prof_request_id INT,
+                          FOREIGN KEY(prof_request_id) REFERENCES Prof_request(id));
+
+Admin Table---------------------------------------------------------------------------------------------
+CREATE TABLE Admin(id INT PRIMARY KEY AUTO_INCREMENT,
+                          approved_prof_id INT,
+                          FOREIGN KEY(approved_prof_id) REFERENCES Approved_prof(id));
+
+Subject Table---------------------------------------------------------------------------------------------
+CREATE TABLE Subject(id INT PRIMARY KEY AUTO_INCREMENT,
+                    name TEXT,
+                    subject_code TEXT,
+                    chapter_num INT,
+                    department_id INT,
+                    level_id INT,
+                    approved_prof_id INT,
+                    FOREIGN KEY(department_id) REFERENCES department(id),
+                    FOREIGN KEY(level_id) REFERENCES level(id),
+                    FOREIGN KEY(approved_prof_id) REFERENCES approved_prof(id));
+
+---------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------
+
