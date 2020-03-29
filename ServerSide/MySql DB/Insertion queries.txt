@@ -1,0 +1,80 @@
+insert into faculty(faculty.name) values("Faculty of Commerce");
+
+insert into faculty(faculty.name) values("Faculty of Arts");
+
+insert into faculty(faculty.name) values("Faculty of Medicine");
+
+insert into faculty(faculty.name) values("Faculty of Engineering");
+
+
+
+insert into level(level.faculty_id,level.name,level.level_rank) values(4,"level one",1);
+insert into level(level.faculty_id,level.name,level.level_rank) values(4,"level two",2);
+insert into level(level.faculty_id,level.name,level.level_rank) values(4,"level three",3);
+insert into level(level.faculty_id,level.name,level.level_rank) values(4,"level four",4);
+
+insert into level(level.faculty_id,level.name,level.level_rank) values(5,"level one",1);
+insert into level(level.faculty_id,level.name,level.level_rank) values(5,"level two",2);
+insert into level(level.faculty_id,level.name,level.level_rank) values(5,"level three",3);
+insert into level(level.faculty_id,level.name,level.level_rank) values(5,"level four",4);
+
+insert into level(level.faculty_id,level.name,level.level_rank) values(6,"level one",1);
+insert into level(level.faculty_id,level.name,level.level_rank) values(6,"level two",2);
+insert into level(level.faculty_id,level.name,level.level_rank) values(6,"level three",3);
+insert into level(level.faculty_id,level.name,level.level_rank) values(6,"level four",4);
+
+insert into level(level.faculty_id,level.name,level.level_rank) values(7,"level one",1);
+insert into level(level.faculty_id,level.name,level.level_rank) values(7,"level two",2);
+insert into level(level.faculty_id,level.name,level.level_rank) values(7,"level three",3);
+insert into level(level.faculty_id,level.name,level.level_rank) values(7,"level four",4);
+insert into level(level.faculty_id,level.name,level.level_rank) values(7,"level five",5);
+
+
+insert into department(department.name,department.faculty_id) VALUES("department of coumputer science",8);
+insert into department(department.name,department.faculty_id) VALUES("department of information system",8);
+insert into department(department.name,department.faculty_id) VALUES("department of information technology",8);
+insert into department(department.name,department.faculty_id) VALUES("department of software enginerring",8);
+insert into department(department.name,department.faculty_id) VALUES("general department",8);
+
+insert into department(department.name,department.faculty_id) VALUES("general department",7);
+insert into department(department.name,department.faculty_id) VALUES("department of coumputer engineering",7);
+insert into department(department.name,department.faculty_id) VALUES("department of electronic engineering",7);
+insert into department(department.name,department.faculty_id) VALUES("department of civil engineering",7);
+insert into department(department.name,department.faculty_id) VALUES("department of petroleum engineering",7);
+
+insert into department(department.name,department.faculty_id) VALUES("department of  Public Health and Community Medicine",6);
+insert into department(department.name,department.faculty_id) VALUES("department of Medical Pharmacology",6);
+insert into department(department.name,department.faculty_id) VALUES("department of Histology and cell biology",6);
+insert into department(department.name,department.faculty_id) VALUES("department of Forensic Medicine & Clinical Toxicology",8);
+insert into department(department.name,department.faculty_id) VALUES("general department",6);
+
+insert into department(department.name,department.faculty_id) VALUES("department of Arabic Language and Literature.",5);
+insert into department(department.name,department.faculty_id) VALUES("department of Philosophy.",5);
+insert into department(department.name,department.faculty_id) VALUES("department of History.",5);
+insert into department(department.name,department.faculty_id) VALUES("department of English Language and Literature.",5);
+insert into department(department.name,department.faculty_id) VALUES("department of Mass Communication.",5);
+insert into department(department.name,department.faculty_id) VALUES("general department",5);
+
+insert into department(department.name,department.faculty_id) VALUES("department of Business Administration.",4);
+insert into department(department.name,department.faculty_id) VALUES("department of Economics and Public Finance.",4);
+insert into department(department.name,department.faculty_id) VALUES("department of Political Science.",4);
+insert into department(department.name,department.faculty_id) VALUES("department of Accounting",4);
+insert into department(department.name,department.faculty_id) VALUES("general department",4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -127,3 +127,13 @@ CREATE TABLE Student_answer(
                   FOREIGN KEY(prime_answer_id) REFERENCES Prime_answer(id),
 					student_id INT,
                   FOREIGN KEY(student_id) REFERENCES Student(id));
+
+
+
+
+
+
+
+ALTER TABLE `level` ADD `level_rank` INT;
+ALTER TABLE `department` ADD `level_id` INT;
+ALTER TABLE department ADD FOREIGN KEY(level_id) REFERENCES level(id);

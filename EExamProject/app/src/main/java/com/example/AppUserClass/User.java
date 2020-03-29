@@ -47,4 +47,16 @@ class User implements User_Interface{
     {return acadmic_id;}
     public void set_acadmic_id(String acadmic_id)
     {this.acadmic_id=acadmic_id;}
+
+    public void change_name(String new_name)
+    {}
+
+    public void change_password(String password)
+    {}
+
+    public void change_phone(String phone)
+    {}
+
+    //public void ()
+   // {}
 }

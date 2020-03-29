@@ -1,9 +1,13 @@
 package com.example.AppUserClass;
 
+import java.util.ArrayList;
+
 public class Level {
     private String name;
     private int id;
     private Faculty faculty;
+    private ArrayList<Department> departments;
+
 
     public Level()
     {
@@ -28,7 +32,10 @@ public class Level {
     public void set_faculty(Faculty faculty)
     {this.faculty=faculty;}
 
-
+    public ArrayList<Department>  get_department()
+    {return this.departments;}
+    public void set_departments(ArrayList<Department> departments)
+    {this.departments=departments;}
 
 
     public String get_name()

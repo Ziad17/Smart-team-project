@@ -46,4 +46,36 @@ public class Student extends User
     {this.level_id=level_id;}
 
 
+
+    public void show_my_results(int student_id)
+    {}
+
+    public void show_question_bank_by_subject(int student_id,int subject_id)
+    {}
+
+    public void add_subject_request(int student_id,int subject_id)
+    {}
+
+    public void show_my_subjects(int student_id)
+    {}
+
+    public void show_exam_schedule(int student_id,int subject_id)
+    {}
+
+    public void take_exam(int exam_id,int student_id)
+    {}
+
+    public void submit_exam(int exam_id,int student_id)
+    {}
+
+    public void answer_question(int student_id,int prime_answer_id,int question_id,int exam_id,boolean correct)
+    {}
+
+ //   public void ()
+   // {}
+
+ 
+
+
+
 }
