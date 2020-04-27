@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res_auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_menu">
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/student_nav_exams"
+            android:title="@string/exams"/>
+        <item
+            android:id="@+id/student_nav_results"
+            android:title="@string/my_results"/>
+        <item
+            android:id="@+id/student_nav_subjects"
+            android:title="@string/subjects"/>
+        <item
+            android:id="@+id/student_nav_questions"
+            android:title="@string/question_banks"/>
+    </group>
+
+</menu>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res_auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_menu">
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/admin_nav_exams"
+            android:title="@string/exams"/>
+        <item
+            android:id="@+id/admin_nav_results"
+            android:title="@string/results"/>
+        <item
+            android:id="@+id/admin_nav_subjects"
+            android:title="@string/subjects"/>
+        <item
+            android:id="@+id/admin_nav_questions"
+            android:title="@string/question_banks"/>
+        <item
+            android:id="@+id/admin_nav_students"
+            android:title="@string/students"/>
+        <item
+            android:id="@+id/admin_nav_professors"
+            android:title="@string/professors"/>
+        <item
+            android:id="@+id/admin_nav_departments"
+            android:title="@string/departments"/>
+        <item
+            android:id="@+id/admin_nav_levels"
+            android:title="@string/levels"/>
+    </group>
+
+</menu>

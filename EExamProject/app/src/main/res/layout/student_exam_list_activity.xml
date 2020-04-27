@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.StudentView.StudentExamListActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/activity_student_exam_list_subjects_spinner"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/activity_student_exam_list_content_loader"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:text="@string/reload"/>
+
+
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scheduled_exams"
+        android:gravity="center"/>
+
+    <ListView
+        android:id="@+id/activity_student_exam_lis_schedule_exam_list"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0.4"
+        android:layout_width="match_parent"
+        >
+
+
+
+
+    </ListView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/finished_exams"
+        android:gravity="center"/>
+    <ListView
+        android:id="@+id/activity_student_exam_lis_finish_exam_list"
+        android:layout_margin="10dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:layout_width="match_parent"
+        >
+    </ListView>
+
+
+
+</LinearLayout>
